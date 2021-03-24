@@ -111,7 +111,7 @@ for index in (range(0,len(prep_text))):
     prep_text[index] = str(prep_text[index]).replace('xd', ' ')
     print(str(index)+ ': nº of lines replaced')
 
-#tokenizer and lemmatizer adapted from: https://towardsdatascience.com/topic-modelling-in-python-with-nltk-and-gensim-4ef03213cd21
+#tokenizer and lemmatizer 
 def tokenize(text):
     lda_tokens = list()
     tokens = parser(text) 
@@ -128,7 +128,7 @@ def tokenize(text):
             lda_tokens.append(token.lower_) 
     return lda_tokens
         
-#adapted from https://towardsdatascience.com/topic-modelling-in-python-with-nltk-and-gensim-4ef03213cd21
+#adapted from 
 #a good idea could be a curseword stoplist
 def prepare_text_for_lda(text):
     lemmas = tokenize(text)
