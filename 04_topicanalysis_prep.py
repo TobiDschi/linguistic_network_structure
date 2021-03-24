@@ -128,7 +128,6 @@ def tokenize(text):
             lda_tokens.append(token.lower_) 
     return lda_tokens
         
-#adapted from 
 #a good idea could be a curseword stoplist
 def prepare_text_for_lda(text):
     lemmas = tokenize(text)
